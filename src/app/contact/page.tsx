@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
 
 // Animation variants for staggering children
 const containerVariants = {
@@ -51,7 +51,7 @@ export default function ContactPage() {
         </motion.h1>
         
         <motion.p variants={itemVariants} className="mt-4 text-lg text-gray-400">
-          Have a project in mind or just want to connect? I'm always open to discussing new ideas and opportunities.
+          Have a project in mind or just want to connect? I&apos;m always open to discussing new ideas and opportunities.
         </motion.p>
         
         <motion.a

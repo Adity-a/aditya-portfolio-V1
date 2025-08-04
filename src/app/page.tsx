@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaEnvelope, FaProjectDiagram, FaTrophy, FaTools, FaBrain, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaProjectDiagram } from 'react-icons/fa';
 
 // Animation Variants
 const staggerContainer = {
@@ -104,7 +104,7 @@ export default function HomePage() {
         </motion.h1>
         <motion.h2 variants={fadeInItem} className="text-3xl md:text-5xl font-bold text-gray-400 mt-2">I build intelligent systems.</motion.h2>
         <motion.p variants={fadeInItem} className="mt-6 max-w-xl text-lg">
-          I'm a researcher and engineer specializing in Machine Learning and Computer Vision, passionate about creating software that solves real-world challenges.
+          I&apos;m a researcher and engineer specializing in Machine Learning and Computer Vision, passionate about creating software that solves real-world challenges.
         </motion.p>
         <motion.div variants={fadeInItem} className="flex space-x-6 mt-8">
             <a href="https://github.com/Adity-a" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 transition-transform duration-300 hover:scale-110"><FaGithub size={28} /></a>
