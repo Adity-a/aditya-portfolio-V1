@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { FaBook, FaBrain, FaUniversity, FaTrophy } from 'react-icons/fa';
+import { FaBook, FaBrain, FaTrophy } from 'react-icons/fa';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },

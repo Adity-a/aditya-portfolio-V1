@@ -47,7 +47,7 @@ export default function ContactPage() {
           variants={itemVariants}
           className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-blue-300"
         >
-          Let's Build Together
+          Let&apos;s Build Together
         </motion.h1>
         
         <motion.p variants={itemVariants} className="mt-4 text-lg text-gray-400">
