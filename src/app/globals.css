@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Add these styles to your existing globals.css file */
+
+body {
+  /* Animated Gradient Background */
+  background: linear-gradient(-45deg, #0a192f, #112240, #0a192f, #173d7a);
+  background-size: 400% 400%;
+  animation: gradientBG 25s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Optional: Subtle grid pattern for a techy feel */
+.bg-grid-pattern {
+    background-image:
+        linear-gradient(to right, rgba(0, 119, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 119, 255, 0.1) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+}
