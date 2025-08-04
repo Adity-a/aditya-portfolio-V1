@@ -21,10 +21,11 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
+    // FIXED: Added "as const" to the transition object
     transition: {
       type: 'spring',
       stiffness: 100,
-    },
+    } as const,
   },
 };
 
