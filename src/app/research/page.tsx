@@ -15,7 +15,7 @@ const staggerContainer = {
 
 export default function ResearchPage() {
   const publications = [
-        { title: "An IoT-based Heavy Vehicle Parking and Accident Avoidence System for Smart Cities using CNN", journal: "2023 International Conference on Communication, Security and Artificial Intelligence (ICCSAI)", doi: "10.1109/ICCSAI58273.2023.10264027" },
+        { title: "An IoT-based Heavy Vehicle Parking and Accident Avoidence System for Smart Cities using CNN", journal: "2023 International Conference on Communication, Security and Artificial Intelligence (ICCSAI)", doi: "10.1109/ICCSAI59793.2023.10421475" },
     { title: "Optical Character Recognition of Bhrami Script using Tesseract", journal: "2024 Asian Conference on Intelligent Technologies (ACOIT)", doi: "10.1109/ACOIT62457.2024.10939818" }
   ];
 
