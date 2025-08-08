@@ -3,11 +3,13 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { GiArchiveResearch } from "react-icons/gi";
+import { FaCode } from 'react-icons/fa';
 
+// Updated navLinks to include the new page
 const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Research', href: '/research' },
+  { name: 'Profile', href: '/profile' }, // New link added here
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -18,7 +20,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full bg-[#0a192f]/80 backdrop-blur-sm z-50">
       <nav className="max-w-6xl mx-auto px-5 md:px-10 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-blue-300 hover:text-blue-200 transition-colors">
-          <GiArchiveResearch />
+          <FaCode />
         </Link>
         <ul className="flex items-center space-x-6 md:space-x-8">
           {navLinks.map((link) => (
