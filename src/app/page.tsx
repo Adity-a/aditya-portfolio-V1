@@ -40,7 +40,6 @@ const letter = {
 };
 
 export default function HomePage() {
-  <meta name="google-site-verification" content="tP77gpwolhkaQBLeWuHajlDAx_CswKfbOfDIl7BZm7E" />
   const name = "Aditya Balodi";
   const projects = [
     {

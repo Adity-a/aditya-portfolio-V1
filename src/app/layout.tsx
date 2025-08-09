@@ -17,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+        <meta name="google-site-verification" content="tP77gpwolhkaQBLeWuHajlDAx_CswKfbOfDIl7BZm7E" />
       <body className={`${inter.className} bg-[#0a192f] text-gray-300 flex flex-col min-h-screen`}>
         <Navbar />
         {/* The 'flex-grow' class on main makes the footer stick to the bottom */}
