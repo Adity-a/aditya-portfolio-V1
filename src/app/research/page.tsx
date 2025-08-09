@@ -27,12 +27,6 @@ export default function ResearchPage() {
       doi: "10.1109/ICCSAI59793.2023.10421475",
       contribution: "I designed and implemented the Convolutional Neural Network (CNN) for vehicle detection and classification, and integrated the model with the IoT hardware for real-time processing."
     },
-    { 
-      title: "Optical Character Recognition of Sanskrit using Tesseract", 
-      journal: "2025 12th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)", 
-      doi: "",
-      contribution: "In Review"
-    }
   ];
 
   return (
