@@ -40,7 +40,7 @@ const letter = {
 };
 
 export default function HomePage() {
-  const name = "Aditya Balodi.";
+  const name = "Aditya Balodi";
   const projects = [
     {
       title: "Presence: Smart Attendance App",
@@ -115,10 +115,37 @@ export default function HomePage() {
         <motion.p variants={fadeInItem} className="mt-6 max-w-xl text-lg">
           I&apos;m a research-focused engineer specializing in Machine Learning and Computer Vision, passionate about creating software that solves real-world challenges.
         </motion.p>
+        
+        {/* UPDATED ICON ANIMATIONS BELOW */}
         <motion.div variants={fadeInItem} className="flex space-x-6 mt-8">
-            <a href="https://github.com/Adity-a" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 transition-transform duration-300 hover:scale-110"><FaGithub size={28} /></a>
-            <a href="https://www.linkedin.com/in/aditya-balodi/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 transition-transform duration-300 hover:scale-110"><FaLinkedin size={28} /></a>
-            <a href="mailto:adityabalodi31@gmail.com" aria-label="Email" className="text-gray-400 hover:text-blue-300 transition-transform duration-300 hover:scale-110"><FaEnvelope size={28} /></a>
+            <motion.a 
+                href="https://github.com/Adity-a" 
+                aria-label="GitHub" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-300"
+                whileHover={{ scale: 1.2, rotate: [0, 10, -10, 0], transition: { duration: 0.5, repeat: Infinity } }}
+            >
+                <FaGithub size={28} />
+            </motion.a>
+            <motion.a 
+                href="https://www.linkedin.com/in/aditya-balodi/" 
+                aria-label="LinkedIn" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-300"
+                whileHover={{ scale: 1.2, rotate: [0, 10, -10, 0], transition: { duration: 0.5, repeat: Infinity } }}
+            >
+                <FaLinkedin size={28} />
+            </motion.a>
+            <motion.a 
+                href="mailto:adityabalodi31@gmail.com" 
+                aria-label="Email" 
+                className="text-gray-400 hover:text-blue-300"
+                whileHover={{ scale: 1.2, rotate: [0, 10, -10, 0], transition: { duration: 0.5, repeat: Infinity } }}
+            >
+                <FaEnvelope size={28} />
+            </motion.a>
         </motion.div>
       </motion.section>
 
@@ -135,8 +162,10 @@ export default function HomePage() {
                        <p className="mt-3 text-sm text-gray-400 italic border-l-2 border-blue-400 pl-3"><b>Research Objective:</b> {p.objective}</p>
                     )}
                     <p className="mt-3 text-gray-300 flex-grow">{p.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                        {p.tags.map(tag => <span key={tag} className="text-xs bg-blue-900/50 text-blue-300 px-2 py-1 rounded">{tag}</span>)}
+                    <div className="flex justify-between items-end mt-4">
+                      <div className="flex flex-wrap gap-2">
+                          {p.tags.map(tag => <span key={tag} className="text-xs bg-blue-900/50 text-blue-300 px-2 py-1 rounded">{tag}</span>)}
+                      </div>
                     </div>
                   </div>
                 </Link>
