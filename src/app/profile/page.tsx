@@ -16,7 +16,8 @@ const staggerContainer = {
 export default function ProfilePage() {
   const courses = [
     "Advanced Algorithms", "Statistical Machine Learning", "Advanced Computer Vision",
-    "Natural Language Processing", "Research Methodology", "Deep Learning Architectures"
+    "Natural Language Processing", "Research Methodology", "Deep Learning Architectures",
+    "Android Development", "Cyber Security"
   ];
 
   return (

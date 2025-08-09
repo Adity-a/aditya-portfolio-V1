@@ -1,6 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Navbar from './components/navbar';
+import Footer from './components/footer'; // 1. Import the Footer
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-[#0a192f] text-gray-300`}>
+    <html lang="en" className="!scroll-smooth">
+      <body className={`${inter.className} bg-[#0a192f] text-gray-300 flex flex-col min-h-screen`}>
         <Navbar />
-        <main className="max-w-6xl mx-auto p-5 md:px-10 pt-24">
+        {/* The 'flex-grow' class on main makes the footer stick to the bottom */}
+        <main className="flex-grow max-w-6xl mx-auto p-5 md:px-10 pt-24 w-full">
           {children}
         </main>
+        <Footer /> {/* 2. Add the Footer component here */}
       </body>
     </html>
   );
